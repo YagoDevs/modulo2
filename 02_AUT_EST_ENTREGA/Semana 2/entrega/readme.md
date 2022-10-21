@@ -1,4 +1,5 @@
-MODELO LÓGICO![bdlogico](C:\Users\Inteli\Videos\bdlogico.png)
+MODELO LÓGICO!
+https://github.com/YagoDevs/modulo2/blob/main/02_AUT_EST_ENTREGA/Semana%202/entrega/bdlogico.png
 
 
 
