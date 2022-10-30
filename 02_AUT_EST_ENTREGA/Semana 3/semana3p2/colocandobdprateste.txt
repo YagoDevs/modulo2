@@ -1,0 +1,66 @@
+CREATE TABLE IF NOT EXISTS empreiteira (
+    cod_empreiteira INTEGER PRIMARY KEY AUTOINCREMENT,
+    cod_estadocidade INTEGER,
+    cnpj varchar(18) NOT NULL,
+    data_de_abertura  date,
+    razao_social varchar(255) NOT NULL,
+    nome_fantasia varchar(255),
+    qtd_funcionario int,
+    logradouro varchar(150) NOT NULL,
+    numero varchar(7) NOT NULL,
+    bairro varchar(50) NOT NULL,
+    cnae varchar(6),
+    telefone char(14) NOT NULL,
+    email varchar(255) NOT NULL,
+    FOREIGN KEY (cod_estadocidade) REFERENCES estado_cidade(cod_estadocidade)
+);
+
+CREATE TABLE IF NOT EXISTS usuario (
+    cod_usuario INTEGER PRIMARY KEY AUTOINCREMENT,
+    cod_empreiteira INTEGER,
+    email varchar(255) NOT NULL,
+    senha char(32) NOT NULL,
+    is_admin BIT,
+    FOREIGN KEY (cod_empreiteira) REFERENCES empreiteira(cod_empreiteira)
+
+);
+
+CREATE TABLE IF NOT EXISTS estado_cidade (
+    cod_estadocidade INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome_cidade varchar(30) NOT NULL,
+    nome_estado char(2) NOT NULL
+
+);
+
+CREATE TABLE IF NOT EXISTS inscricoes (
+    cod_inscricao INTEGER PRIMARY KEY AUTOINCREMENT,
+    cod_projeto INTEGER,
+    cod_status INTEGER,
+    FOREIGN KEY (cod_projeto) REFERENCES projeto(cod_projeto),
+    FOREIGN KEY (cod_status) REFERENCES status(cod_status)
+    
+);
+
+CREATE TABLE IF NOT EXISTS projeto (
+    cod_projeto INTEGER PRIMARY KEY AUTOINCREMENT,
+    cod_estadocidade INTEGER,
+    logradouro varchar(150),
+    bairro varchar(50),
+    tamanho_da_obra INTEGER,
+    especialidade_obra varchar(100),
+    data_inicio date,
+    data_fim date,
+    descricao varchar(4000),
+    imagem_link varchar,
+    FOREIGN KEY (cod_estadocidade) REFERENCES estado_cidade(cod_estadocidade)
+    
+);
+
+CREATE TABLE IF NOT EXISTS status (
+    cod_status INTEGER PRIMARY KEY AUTOINCREMENT,
+    situacoes varchar(20) 
+    
+);
+
+
+INSERT INTO usuario (email, senha, is_admin) VALUES ('yagophellipe2012@live.com', 'yago852741', 1);

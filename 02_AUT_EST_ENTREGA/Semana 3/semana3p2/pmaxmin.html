@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto máximo/minimo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="lancvertical.html">Lançamento Vertical</a></li>
+                <li><a href="pmaxmin.html">Ponto máximo/minimo</a></li>
+                <li><a href="temperatura.html">Temperatura</a></li>
+                <li><a href="consuenergia.html">Consumo De Energia</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h1>Calcule o Ponto máximo e o ponto minimo!</h1>
+    Coloque o valor de A: <input type="number" id="a" ></input>
+    Coloque o valor de B: <input type="number" id="b" ></input>
+    Coloque o valor de C: <input type="number" id="c" ></input>
+    <input type="button" value="calcular" onclick="pmaxmin();" />
+    Yv: <input type="text" id="maxminy" readonly/>
+    Xv <input type="text" id="maxminx" readonly/>
+
+    <script src="script.js"></script>
+</body>
+</html>
