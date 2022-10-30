@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo De Energia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="lancvertical.html">Lançamento Vertical</a></li>
+                <li><a href="pmaxmin.html">Ponto máximo/minimo</a></li>
+                <li><a href="temperatura.html">Temperatura</a></li>
+                <li><a href="consuenergia.html">Consumo De Energia</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h1>Calcule o valor do consumo de energia!</h1>
+    Quantidade de Kwh consumidos:  <input type="number"  id="consumidos" value=""></input><br/>
+    Valor unitário do Kwh: <input type="number"  id="unitario" value=""></input>
+    <input type="button" value="calcular" onclick="consuenergia();" />
+    Valor do consumo de energia em reais: <input type="text" id="respconsumo" readonly/>
+</body>
+<script src="script.js"></script>
+</html>

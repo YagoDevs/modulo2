@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperaturas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+      <nav>
+          <ul class="nav_links">
+              <li><a href="lancvertical.html">Lançamento Vertical</a></li>
+              <li><a href="pmaxmin.html">Ponto máximo/minimo</a></li>
+              <li><a href="temperatura.html">Temperatura</a></li>
+              <li><a href="consuenergia.html">Consumo De Energia</a></li>
+          </ul>
+      </nav>
+
+    </header>  
+    <H2>Converta de celsius para fahrenheit</H2>
+      Celcius: <input type="number" id="celsius" />
+      <input type="button" value="calcular" onclick="temperatura();" />
+        fahrenheit: <input type="text" id="text" readonly/>
+
+    <H2>Converta de fahrenheit para celsius</H2>
+      fahrenheit: <input type="number" id="fahrenheit" />
+      <input type="button" value="calcular" onclick="temperatura2();" />
+        celsius: <input type="text" id="text2" readonly/>
+
+
+  <script src="script.js"></script>   
+</body>
+    
+</html>
