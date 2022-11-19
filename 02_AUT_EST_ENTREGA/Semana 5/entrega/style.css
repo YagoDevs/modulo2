@@ -1,28 +1,34 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body{
     background-color: #7d7e72;
+    
 }
 main{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .linha{
-    width:400px;
+    width: 60%;
     height: 3px;
     border:1px solid #000;
     background-color: #1e6e75;
     
 }
 .linha-grande{
-    width:620px;
+    width:50%px;
     height: 3px;
     border:1px solid #000;
     background-color: #1e6e75;
     
 }
 .row{
-    width: 1000px;
-    height: 1500px;
+    width: 90%;
+    height: 100%;
     background-color: #ffff;
     display: flex;
     box-shadow: 10px 20px #302e2e;
@@ -52,7 +58,7 @@ main{
     font-size:20px;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 
@@ -108,3 +114,62 @@ h4{
 .btn-1:hover::after{
     transform: rotate(150deg);
 }
+.perso-info{
+    padding-left: 15%;
+}
+
+/**/
+@media screen and (max-width: 768px) {
+    .row{
+        width: 85%;
+    }
+    header{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perso-info{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 3%;
+        font-size: 26px;
+    }
+    section{
+        padding: 10px;     
+        font-size: 26px;
+        
+    }
+
+}
+/* Celular */
+@media screen and (max-width: 480px) {
+    .row{
+        width: 85%;
+    }
+    header{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perso-info{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 3%;
+        font-size: 26px;
+    }
+    section{
+        padding: 10px;     
+        font-size: 26px;
+        
+    }
+
+}
+
+
+
