@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="experiencia.html"><h4>Inserir/Atualizar/deletar Experiência</h4></a>
+    <a href="index.html"><h4>Curriculo</h4></a><br>
+    <h2>Adicionar Usuario: </h2>
+    <form action="http://localhost:3000/addUsuario" method="post">
+        Nome: <input name="nome" type="text">
+        Curso: <input name="curso" type="text">
+        Endereço: <input name="endereco" type="text">
+        Email: <input name="email" type="text">
+        Telefone: <input name="telefone" type="text">
+        <input type="submit"></input>
+    </form><br>
+
+    <h2>Atualizar Usuario:</h2>
+    <form action="/atualizarUsuario" method="post">
+        cod_usuario: <input name="cod_usuario" type="text">
+        Nome: <input name="nome" type="text">
+        Curso: <input name="curso" type="text">
+        Endereço: <input name="endereco" type="text">
+        Email: <input name="email" type="email">
+        Telefone: <input name="telefone" type="tel">
+        <button type="submit">Submit</button>
+    </form><br>
+    
+    <h2>Deletar Usuario</h2>
+    <form action="http://localhost:3000/deleteUsuario" method="post">
+        cod_usuario: <input name="cod_usuario" type="text">
+        <input type="submit"></input>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curriculo Yago</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <main class="row" >
+            <div class="box">
+                <header class="header">
+                    <img  class="img" src="imagens/yagofoto.JPG">
+                    <div id="perso-info" class="perso-info">
+                        <a href="experiencia.html"><h4>Inserir/Atualizar/deletar Experiência</h4></a>
+                        <a href="usuario.html"><h4>Inserir/Atualizar/deletar Usuario</h4></a>
+                        <div id="showuser"></div>
+                        <button id="btnEsconder"class="btn btn-1">Esconder Informações</button>
+                        <button id="btnMostrar"class="btn btn-1">Mostrar Informações</button>
+                        <button id="btnColorir"class="btn btn-1">Colorir Informações</button>
+                        <button id="btnDescolorir"class="btn btn-1">Descolorir Informações</button>
+                        
+                        <div id="yagofrases">
+                            <p>ajax abaixo!!</p>
+                            <button class="btn btn-1" onclick="rodandoDocumento();">Aperte e veja um txt</button>
+                        </div>
+                    </div>
+                </header>
+                <div class="linha-grande"></div>
+                <div>
+                    <section >
+                        <h2>FORMAÇÃO</h2>
+                        <div class="linha"></div>
+                        <div id="idformacao"></div>
+                        
+                    </section>
+                    <section>
+                        <h2> EXPERIÊNCIA</h2>
+                        <div class="linha"></div>
+                        <div id="idexperiencia"></div>
+                        
+                        
+                        
+                    </section>
+                    <section>
+                        <h2>PROJETOS</h2>
+                        <div class="linha"></div>
+                        <div id="idprojetos""></div>
+                        
+
+                        <a href="https://github.com/FireArrow-Nasa-Space-Apps-Challange-SP/projeto" target="_blank"><button  class="btn btn-1">Mostrar Projeto</button></a>
+                    </section>                  
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</html>

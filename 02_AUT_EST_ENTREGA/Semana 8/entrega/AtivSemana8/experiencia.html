@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="usuario.html"><h4>Inserir/Atualizar/deletar Usuario</h4></a>
+    <a href="index.html"><h4>Curriculo</h4></a><br>
+
+    <h2>Adicionar experiencia</h2>
+    <form action="/addExperiencia" method="post">
+        cod_usuario: <input name="cod_usuario" type="text">
+        Nome da Empresa: <input name="Nome_Empresa" type="text">
+        Ano de Atuação: <input name="Ano_Atuação" type="text">
+        Cargo: <input name="Cargo" type="text">
+        Descricão: <input name="descricao" type="text">
+        <input type="submit">
+    </form><br>
+
+    <h2>Atualizar experiencia</h2>
+    <form action="/atualizarExperiencia" method="post">
+        cod_usuario: <input name="cod_usuario" type="text">
+        id Experiencia: <input name="id" type="text">
+        Nome da Empresa: <input name="Nome_Empresa" type="text">
+        Ano de Atuação: <input name="Ano_Atuação" type="text">
+        Cargo: <input name="Cargo" type="text">
+        Descricão: <input name="descricao" type="text">
+        <input type="submit">
+    </form><br>
+    
+    <h2>Deletar experiencia</h2>
+    <form action="/deleteExperiencia" method="post">
+        cod_usuario: <input name="cod_usuario" type="text"/>
+        id Experiencia: <input name="id" type="text"/>
+        <input type="submit">
+    </form>
+</body>
+</html>
