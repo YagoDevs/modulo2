@@ -11,17 +11,40 @@
         <a href="binario.html">Binário</a>
         <a href="iMaluca.html">Impressão Maluca</a>
         <a href="index.html">Juros Simples</a><br><br><br>
-        <h2>Selecione a opção que deseja calcular, coloque os valores e clique em calcular</h2>
-        <input type="radio" name="valorpresente" id="valorPresente" name="fav_language" value="ValorPresente">
-        <label for="valorPresente">Valor Presente</label><br>
-        <input type="radio" name="valorfuturo" id="valorFuturo" name="fav_language" value="ValorFuturo">
-        <label for="valorFuturo">Valor Futuro</label><br><br>
-        Valor futuro: <input id="vf" type="number"> <br><br>
-        Valor Presente: <input id="vp" type="number"> <br><br>
-        taxa de juros: <input id="i" type="number"><br><br>
-        numero de periodo(mês): <input id="n" type="number">
-        <button onclick="vpvf();">Calcular</button><br><br>
-        Resultado: <div id="resultado"></div>
+    
+        <h2>Vá para a opção que deseja calcular, coloque os valores e veja o resultado</h2>
+        <label for="fname"></label><br>
+        <h2>Calcule o valor futuro: </h2>
+        <label>presente:</label> <br>
+        <input type="number" id="presente"><br>
+
+        <label>Duração (em meses):</label><br>
+        <input type="number" id="duracao"><br>
+
+        <label>Taxa (mensal):</label><br>
+        <input type="number" id="taxa"><br><br>
+    
+
+        <button onclick="valorFuturo()">calcular</button>
+        valor futuro=  <p id="resultado"></p>
+        
+        
+
+        <h2>Valor presente</h2><br>
+        <label>Valor futuro:</label><br>
+        <input type="number" id="futuro"><br>
+
+        <label>Duração (em meses):</label><br>
+        <input type="number" id="duracao2"><br>
+
+        <label>Taxa mensal:</label><br>
+        <input type="number" id="taxa2"><br><br>
+        
+
+        <button onclick="valorPresente()">calcular</button>
+        valor presente =  <p id="resultado2"></p>
+        
     </body>
     <script src="script.js"></script>
+    
 </html>
