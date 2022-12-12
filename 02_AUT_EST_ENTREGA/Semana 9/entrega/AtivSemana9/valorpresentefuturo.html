@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <a href="binario.html">Binário</a>
+        <a href="iMaluca.html">Impressão Maluca</a>
+        <a href="index.html">Juros Simples</a><br><br><br>
+        <h2>Selecione a opção que deseja calcular, coloque os valores e clique em calcular</h2>
+        <input type="radio" name="valorpresente" id="valorPresente" name="fav_language" value="ValorPresente">
+        <label for="valorPresente">Valor Presente</label><br>
+        <input type="radio" name="valorfuturo" id="valorFuturo" name="fav_language" value="ValorFuturo">
+        <label for="valorFuturo">Valor Futuro</label><br><br>
+        Valor futuro: <input id="vf" type="number"> <br><br>
+        Valor Presente: <input id="vp" type="number"> <br><br>
+        taxa de juros: <input id="i" type="number"><br><br>
+        numero de periodo(mês): <input id="n" type="number">
+        <button onclick="vpvf();">Calcular</button><br><br>
+        Resultado: <div id="resultado"></div>
+    </body>
+    <script src="script.js"></script>
+</html>
